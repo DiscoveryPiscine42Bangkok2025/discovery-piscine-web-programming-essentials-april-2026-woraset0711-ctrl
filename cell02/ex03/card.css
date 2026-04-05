@@ -1,0 +1,66 @@
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* ทำให้ตารางล่องหน */
+}
+
+.profile-table td {
+    padding: 10px 0;
+    border: none;
+}
+
+.main-img {
+    width: 100%; /* ให้รูปกว้างเท่าบัตร */
+    display: block;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 15px !important;
+}
+
+.info {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.socials {
+    font-size: 18px;
+    word-spacing: 10px;
+}
+
+/* ปรับแต่งปุ่มให้เหมือนในรูปตัวอย่าง */
+.contact-row {
+    padding: 0 !important; /* ลบ padding เพื่อให้ปุ่มชิดขอบ */
+}
+
+.btn-contact {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #333;
+}

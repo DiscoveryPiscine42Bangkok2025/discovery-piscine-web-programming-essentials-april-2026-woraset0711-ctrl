@@ -1,0 +1,40 @@
+/* responsive.css */
+
+/* 1. ตั้งค่าพื้นฐานให้เต็มหน้าจอแบบไม่มีขอบขาว */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* ป้องกันแถบเลื่อนโผล่มาเวลารูปหรือตัวอักษรขยับ */
+}
+
+/* 2. ตั้งค่าตารางให้ยืดหยุ่นเต็มพื้นที่ */
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse; /* ให้เส้นขอบแนบสนิทกัน */
+    table-layout: fixed; /* บังคับให้ขนาดช่องคงที่ 50/50 แม้ตัวหนังสือจะยาว */
+}
+
+/* 3. ตั้งค่าช่องตาราง (Cell) */
+td {
+    border: 2px solid #000000; /* เพิ่มความหนาเส้นขอบให้ดูชัดเจนสวยงาม */
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* เปลี่ยนฟอนต์ให้ดูทันสมัย */
+    font-weight: bold;
+    font-size: 3vw; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้นตามหน้าจอ */
+    transition: all 0.3s ease; /* แถม: เวลาขยายจอ ตัวหนังสือจะขยับแบบนุ่มนวล */
+}
+
+/* 4. แยกสีและสไตล์ของแต่ละช่อง */
+.blue-cell {
+    background-color: #009afa;
+    color: white; /* ตัวหนังสือสีขาวบนพื้นน้ำเงินจะอ่านง่ายกว่า */
+}
+
+.white-cell {
+    background-color: #ffffff;
+    color: #333;
+}

@@ -1,0 +1,88 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 🔥 Parallax base */
+.parallax {
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* รูปที่ 1 */
+.parallax1 {
+    background-image: url(https://media.discordapp.net/attachments/1340650592422334497/1490200802936229908/image0.jpg?ex=69d33126&is=69d1dfa6&hm=009fa2a49669070c12e989e67e9620fb00c4863f915affb764c2f97d6c1426b5&=&format=webp&width=1367&height=1823);
+}
+
+/* รูปที่ 2 */
+.parallax2 {
+    background-image: url(https://media.discordapp.net/attachments/1340650592422334497/1490203710691868832/temp_image_5DFBF673-50DD-4BE1-A654-15AFF5A00BC4.webp?ex=69d333db&is=69d1e25b&hm=be1f9d67a0077524e8f634ae0747d19ddcdf22d81a2dc71554ae71ae6345687e&=&format=webp&width=1620&height=1218);
+}
+
+/* 🔥 overlay มืด (ทำให้ดู cinematic) */
+.parallax::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* 🔥 ข้อความกลาง */
+.text {
+    position: relative;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    padding: 20px 40px;
+
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.5s ease forwards;
+}
+
+/* 🔥 animation นุ่มๆ */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔥 กล่องกลาง */
+.content {
+    height: 300px;
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+
+    transition: all 0.5s ease;
+}
+
+/* hover ให้มีลูกเล่น */
+.content:hover {
+    background: #111;
+    transform: scale(1.02);
+}
