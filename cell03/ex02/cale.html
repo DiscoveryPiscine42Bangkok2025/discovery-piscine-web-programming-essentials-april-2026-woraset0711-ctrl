@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>It's over 9000</title>
+</head>
+<body>
+
+    <input type="text" id="leftNum">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="rightNum">
+    <input type="submit" value="Try me!" id="submitBtn">
+
+    <script>
+        const leftInput = document.getElementById('leftNum');
+        const rightInput = document.getElementById('rightNum');
+        const opSelect = document.getElementById('operator');
+        const btn = document.getElementById('submitBtn');
+
+        btn.addEventListener('click', () => {
+            const n1 = Number(leftInput.value);
+            const n2 = Number(rightInput.value);
+
+            if (leftInput.value === '' || rightInput.value === '' || n1 < 0 || n2 < 0 || !Number.isInteger(n1) || !Number.isInteger(n2)) {
+                alert('Error :(');
+                return;
+            }
+            if ((opSelect.value === '/' || opSelect.value === '%') && n2 === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+            let result;
+            switch (opSelect.value) {
+                case '+': result = n1 + n2; break;
+                case '-': result = n1 - n2; break;
+                case '*': result = n1 * n2; break;
+                case '/': result = n1 / n2; break;
+                case '%': result = n1 % n2; break;
+            }
+
+            alert(result);
+            console.log(result);
+        });
+        setInterval(() => {
+            alert('Please, use me...');
+        }, 30000);
+    </script>
+</body>
+</html>
