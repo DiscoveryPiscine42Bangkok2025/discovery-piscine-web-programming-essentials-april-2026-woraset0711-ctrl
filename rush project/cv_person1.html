@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - Mr.Worarit Setwong</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            padding-top: 70px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+             url(https://t4.ftcdn.net/jpg/19/48/77/31/360_F_1948773136_1D09YWUCZfUAk8jvMdAWHxWgbAOg7Wzv.jpg);
+            background-attachment: fixed; 
+            background-size: cover;     
+            background-position: center;
+            color: #ffffff;       
+        }
+
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 8px solid rgb(250, 245, 245);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); 
+        }
+
+        .content-card {
+            background-color: #ffffff;
+            color: #000000; 
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.233);
+        }
+        
+        .content-card h2, .content-card h4 {
+            color: #000000 !important;
+            border-color: #dee2e6 !important;
+        }
+
+        .experience-img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        .skill-badge {
+            font-size: 1.1rem;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        .contact-box {
+            background: #ffffff;
+            color: #000000; 
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: #ffffff !important; }
+        .lead { color: #cccccc; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"> RushProject </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">ข้อมูลส่วนตัว</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experience">Skills & Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container text-center">
+            <img src="https://media.discordapp.net/attachments/1340650592422334497/1490618910834294784/IMG_3018.jpg?ex=69d6b0ca&is=69d55f4a&hm=cc633d470290f9c47c4ea3bc1bf87bd8b9586fc0e42ad4496015b17aae6304fc&=&format=webp&width=616&height=1095" alt="Profile" class="profile-img rounded-circle mb-4">
+            <h1 class="display-4 fw-bold">Mr.Worarit Setwong</h1>
+            <p class="h3 text-primary mb-4">SOP</p>
+            <p class="lead mx-auto" style="max-width: 700px;">
+                ผมเป็นนักพัฒนาเว็บรุ่นใหม่ที่ชื่นชอบการแก้ปัญหาด้วยโค้ดและหลงใหลในการสร้าง User Experience ที่ดีผ่าน jQuery และ Bootstrap 
+                ผมจบการศึกษามัธยมปลายจากโรงเรียนมาเรียลัย  ผมมีความสนใจด้านเทคโนโลยีและระบบ Internet of Things (IoT) ตั้งแต่ระดับมัธยมศึกษา ผมได้เรียนเขียนโค้ดผ่านออนไลน์และฝึกฝนจนถึงทุกวันนี้
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="content-card">
+                <div class="row align-items-center"> 
+                    <div class="col-md-7 mb-5 mb-md-0">
+                        <h2 class="fw-bold mb-4 border-bottom pb-2">Experiences</h2>
+                        <div class="mb-4">
+                            <h4>Engineer Spark</h4>
+                            <p class="text-muted">27 April 2025</p>
+                            <p>ฝึกฝนทักษะการคิดการคำนวณด้านวิศวกรรมศาสตร์อย่างเข้มข้น</p>
+                        </div>
+                        <div class="mb-4"> 
+                            <h4>Circuit Design</h4>
+                            <p class="text-muted">3 August 2025</p>
+                            <p>เรียนรู้เรื่องพื้นฐานของอุปกรณ์อิเล็กทรอนิกส์และหลักการวิเคราะห์กระแส-แรงดันไฟฟ้า</p>
+                        </div>
+                        <div>
+                            <h4>Aero Admission Camp</h4>
+                            <p class="text-muted">3 August 2025</p>
+                            <p>เรียนรู้พื้นฐานเกี่ยวกับการขับเคลื่อนของเครื่องบินและหน้าที่ของวิศวะการบิน</p>
+                        </div>
+
+                        <h2 class="fw-bold mt-5 mb-4 border-bottom pb-2">Skills</h2>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge bg-primary skill-badge">HTML5</span>
+                            <span class="badge bg-info skill-badge text-dark">CSS</span>
+                            <span class="badge bg-warning skill-badge text-dark">JavaScript</span>
+                            <span class="badge bg-success skill-badge">jQuery</span>
+                            <span class="badge bg-dark skill-badge border">Bootstrap 5</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-12 text-center mb-3">
+                                <img src="https://media.discordapp.net/attachments/1340650592422334497/1490954750844211352/IMG_3048.jpg?ex=69d5ef51&is=69d49dd1&hm=0263fc2f4489ea19baa1f92fa2eae52ac983916a1f99dcc1057e8f7addb5aeae&=&format=webp" alt="42Bangkok" class="experience-img">
+                                <small class="text-muted">Engineer Spark</small>
+                            </div>
+                            <div class="col-6 text-center">
+                                <img src="https://media.discordapp.net/attachments/1340650592422334497/1490954750584426517/IMG_3051.jpg?ex=69d5ef51&is=69d49dd1&hm=17b19c8a7ce53773574170f19f3ba33ba7724e0d263e39cdddd1e030188186d1&=&format=webp" alt="basic circuit" class="experience-img">
+                                <small class="text-muted">Circuit Design</small>
+                            </div>
+                            <div class="col-6 text-center">
+                                <img src="https://media.discordapp.net/attachments/1340650592422334497/1490954751062573128/IMG_3049.jpg?ex=69d5ef51&is=69d49dd1&hm=1404cbcf2efa01f6952626f2d88729370059d7aaf940b6e77f002348222eab87&=&format=webp" alt="Workshop engineer" class="experience-img">
+                                <small class="text-muted">Aero Admission camp</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container text-center">
+            <div class="contact-box mx-auto" style="max-width: 600px;">
+                <h2 class="fw-bold mb-4" style="color: black !important;">Contact Me</h2>
+                <p class="mb-2">📧 Email: woraset0711@email.com</p>
+                <p class="mb-4">📞 Phone: 096-984-5882</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/woraset0711-ctrl" class="btn btn-dark px-4">GitHub</a>
+                    <a href="https://www.facebook.com/people/Anutin-Charnvirakul/100001536522818/?locale=th_TH#" class="btn btn-primary px-4">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
