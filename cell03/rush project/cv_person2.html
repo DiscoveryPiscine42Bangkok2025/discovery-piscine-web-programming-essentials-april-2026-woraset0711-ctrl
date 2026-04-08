@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio  ROME</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+
+       body {
+    background-color: #111;
+    color: white;
+    padding-top: 70px;
+}
+
+.bg-orange {
+    background-color: #ff6a00;
+}
+
+.header {
+    background: linear-gradient(135deg, #ff6a00, #ff9a00);
+    padding: 100px 20px;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* Card */
+.card {
+    background-color: #222;
+    color: rgb(212, 134, 17);
+    margin-top: 15px;
+}
+
+.card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+    </style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-orange fixed-top">
+    <div class="container">
+        <ul class="navbar-nav ms-auto"></ul>
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+      <div>
+        <a class="nav-link d-inline text-white" href="#sop">SOP</a>
+        <br>
+        <a class="nav-link d-inline text-white" href="#portfolio">ผลงาน</a>
+        <br>
+        <a class="nav-link d-inline text-white" href="#contact">ติดต่อ</a>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Home -->
+<section id="home" class="header text-center text-white">
+    <img src="https://media.discordapp.net/attachments/1340650592422334497/1490618911098404955/IMG_3019.jpg?ex=69d6b0ca&is=69d55f4a&hm=be21654d42f8ccbd5605944697e5b6e3483b7c98706cb12c92b46278aadb31cc&=&format=webp&width=616&height=1095" class="profile mb-3">
+    <h1>Welcome to My Portfolio</h1>
+    <p>นาย สิริกร ยังเงินแตงนารา | IoT Developer</p>
+</section>
+<br>
+<br>
+<br>
+<br>
+<!-- SOP -->
+<section id="sop" class="container text-center">
+    <h1>SOP</h1>
+    <h6>
+    <p>
+    ผมมีความสนใจด้าน IoT และเทคโนโลยี 
+    ผมมีโปรเจตผมได้พัฒนาโปรเจกต์ Arduino 
+    เช่น ระบบวัดอุณหภูมิ
+
+    </p>
+    <p> ผมมีความสนใจด้านเทคโนโลยีและระบบ Internet of Things (IoT) ตั้งแต่ระดับมัธยมศึกษา โดยเริ่มต้นจากการศึกษาและทดลองใช้งานบอร์ด Arduino ในการพัฒนาโปรเจกต์ต่าง ๆ ซึ่งช่วยให้ผมเข้าใจการทำงานของระบบอิเล็กทรอนิกส์และการเขียนโปรแกรมมากยิ่งขึ้น หนึ่งในผลงานที่ผมภาคภูมิใจคือการพัฒนาอุปกรณ์วัดอุณหภูมิและความชื้น โดยใช้เซนเซอร์ DHT22 ร่วมกับจอแสดงผล LCD และรีเลย์ เพื่อควบคุมอุปกรณ์ไฟฟ้าตามค่าที่กำหนด ระบบนี้ทำให้ผมได้เรียนรู้ทั้งการเขียนโปรแกรม การเชื่อมต่อวงจร และการแก้ไขปัญหาที่เกิดขึ้นจริงระหว่างการพัฒนา</p>
+   </h5>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="container text-center my-5">
+    <h2 class="mb-4">ผลงาน</h2>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="card h-100">
+                <img src="https://media.discordapp.net/attachments/1421516355928330371/1491296208151642343/IMG_4137.jpg?ex=69d72d52&is=69d5dbd2&hm=d2a3101ed69a6b8227edee983ed4b27d451b59a02da8448ae1e1dae94ba947ea&=&format=webp&width=899&height=1199" class="card-img-top" alt="Work 1">
+                <div class="card-body px-1">
+                    <h5 class="card-title" style="font-size: 1rem;">Arduino Project</h5>
+                    <p class="card-text" style="font-size: 0.85rem;">DHT22 + LCD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4"> 
+            <div class="card h-100">
+                <img src="https://media.discordapp.net/attachments/1421516355928330371/1491296263277248542/IMG_2481.png?ex=69d72d60&is=69d5dbe0&hm=5dd2aa727442ee8334b1227ad2440f626b71e180e14342b6a7b29338b3408f4d&=&format=webp&quality=lossless&width=503&height=350" class="card-img-top" alt="Work 2">
+                <div class="card-body px-1">
+                    <h5 class="card-title" style="font-size: 1rem;">ผลงาน สวช.</h5>
+                    <p class="card-text" style="font-size: 0.85rem;">ระดับชาติ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card h-100">
+                <img src="https://media.discordapp.net/attachments/1421516355928330371/1490973906343825408/IMG_0773.png?ex=69d60128&is=69d4afa8&hm=a7235709bdcf348fd2fed87a604482abdd89862b38d541cc706a55fdc84fee88&=&format=webp&quality=lossless&width=496&height=350" class="card-img-top" alt="Work 3">
+                <div class="card-body px-1">
+                    <h5 class="card-title" style="font-size: 1rem;">IoT System</h5>
+                    <p class="card-text" style="font-size: 0.85rem;">Smart Control</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+  
+</section>
+
+<!-- Contact -->
+<section id="contact" class="text-center">
+    <h2>ติดต่อ</h2>
+    <p>IG: sirikornrome</p>  
+    <p>Email: ta0830349115@email.com</p>
+    <p>GitHub: https://github.com/Rome-Sirikorn </p>
+</section>
+
+</body>
+</html> 

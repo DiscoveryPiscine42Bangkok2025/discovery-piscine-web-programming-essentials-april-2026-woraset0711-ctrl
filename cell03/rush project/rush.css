@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(https://media.discordapp.net/attachments/1340650592422334497/1490200802936229908/image0.jpg?ex=69d725a6&is=69d5d426&hm=d9acdf111b924d750be5c279423962c2580dadaa0914d49b41d552e7ee1167a3&=&format=webp&width=899&height=1199);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.custom-btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+.custom-btn:hover {
+    background-color: white;
+    color: #007bff;
+    transform: translateY(-5px); 
+}
